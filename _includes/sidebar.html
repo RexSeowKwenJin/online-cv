@@ -9,20 +9,17 @@
             </div><!--//profile-container-->
             
             <div class="contact-container container-block">
-                <ul class="list-unstyled contact-list">
-                   
+                <ul class="list-unstyled contact-list">        
                    {% if site.email %}
                     <li class="email"><i class="fa fa-envelope"></i><a href="mailto: {{site.email}}">{{site.email}}</a></li>
                     {% else %}
                     <li class="email"><i class="fa fa-envelope"></i><a href="mailto:alan.doe@website.com">alan.doe@website.com</a></li>
                     {% endif %}
-                    
                     {% if site.phone %}
                     <li class="phone"><i class="fa fa-phone"></i><a href="tel:{{site.phone}}">{{site.phone}}</a></li>
                     {% else %}
                     <li class="phone"><i class="fa fa-phone"></i><a href="tel:012 345 6789">012 345 6789</a></li>
                     {% endif %}
-    
                 </ul>
             </div><!--//contact-container-->
            {% include education.html %}
