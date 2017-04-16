@@ -26,15 +26,18 @@
                     {% endif %}
                   
                     
-                    {% if site.home %}
-                    <li class="home"><i class="fa fa-home"></i>{{site.home}}</li>
-                    {% endif %}
+
                   
                     {% if site.linkedin %}
                     <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://in.linkedin.com/in/{{site.linkedin}}" target="_blank">linkedin.com/in/{{site.linkedin}}</a></li>
                     {% else %}
                     <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://in.linkedin.com/in/sharath-kumar-87669956" target="_blank">linkedin.com/in/sharathdt</a></li>
                     {% endif %}
+                  
+                    {% if site.home %}
+                    <li class="home"><i class="fa fa-home"></i>{{site.home}}</li>
+                    {% endif %}
+                  
                 </ul>
             </div><!--//contact-container-->
            {% include education.html %}
